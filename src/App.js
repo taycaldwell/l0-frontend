@@ -1,7 +1,6 @@
 import Nav from './Nav'
 
 const App = () => {
-
   return (
     <>
       <Nav />

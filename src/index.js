@@ -6,7 +6,7 @@ import { ColorModeScript, ChakraProvider } from '@chakra-ui/react';
 
 import WalletConfig from './WalletConfig'
 import App from './App';
-import theme from './theme'
+import Theme from './Theme'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
     <WalletConfig>
       <App />
     </WalletConfig>

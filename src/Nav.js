@@ -1,15 +1,12 @@
 import {
   Box,
   Flex,
-  Button,
-  Stack,
-  useColorMode,
+  Stack
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import NavCollapseMenu from './NavCollapseMenu'
 
 export default function Nav() {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
       <Box px={4}>
@@ -18,9 +15,7 @@ export default function Nav() {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
                 <ConnectButton />
-                <Button onClick={toggleColorMode}>
-                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                </Button>
+                <NavCollapseMenu />
             </Stack>
           </Flex>
         </Flex>
