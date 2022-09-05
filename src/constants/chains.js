@@ -8,8 +8,7 @@ export const chainId = {
   avalancheFuji: 43_113,
   fantom: 250,
   fantomTestnet: 4_002
-} as const
-export type ChainName = keyof typeof chainId
+};
 
 export const bsc = {
   id: chainId.bsc,

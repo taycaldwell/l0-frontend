@@ -1,18 +1,4 @@
-import { ChainName } from './chains'
-
-export type BlockExplorerName = 'etherscan'
-export type BlockExplorer = { name: string; url: string }
-
-type EtherscanChains  = Extract<
-  ChainName,
-  | 'bsc'
-  | 'bscTestnet'
-  | 'avalanche'
-  | 'avalancheFuji'
-  | 'fantom'
-  | 'fantomTestnet'
->
-export const etherscanBlockExplorers: Record<EtherscanChains , BlockExplorer> = {
+export const etherscanBlockExplorers = {
   bsc: {
     name: 'Etherscan',
     url: 'https://bscscan.com/',
@@ -37,4 +23,4 @@ export const etherscanBlockExplorers: Record<EtherscanChains , BlockExplorer> = 
     name: 'Etherscan',
     url: 'https://testnet.ftmscan.com/',
   }
-} as const
+};
