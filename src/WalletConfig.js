@@ -15,7 +15,6 @@ import {
   fantomTestnet
 } from './constants/chains';
 
-/* CHAINS */
 const { chains, provider, webSocketProvider } = configureChains(
   [
     chain.mainnet,
